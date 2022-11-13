@@ -18,10 +18,10 @@ function Nav() {
       <div className={styles.nav__wrap}>
         <div className={styles.nav}>
           <ul className={styles.nav__list}>
-            <NavLink to='/' exact className={styles.nav__list_link}>
+            <NavLink to='/cv/' exact className={styles.nav__list_link}>
               <li className={styles.nav__list_item}>Проекты</li>
             </NavLink>
-            <NavLink to='/summary' exact className={styles.nav__list_link}>
+            <NavLink to='/cv/summary' exact className={styles.nav__list_link}>
               <li className={styles.nav__list_item}>Резюме</li>
             </NavLink>
           </ul>

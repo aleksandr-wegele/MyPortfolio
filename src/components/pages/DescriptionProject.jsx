@@ -16,8 +16,8 @@ function DescriptionProject(props) {
     return(
         <div className={styles.project__wrap}>
             <div className={styles.project__description_headdedr}>
-                <Link to='/' className={styles.project__description_headdedr_link}>&lt; Back</Link>
-                <Link to='/project' className={styles.project__description_headdedr_link_mobile}>&lt; Back</Link>
+                <Link to='/cv/' className={styles.project__description_headdedr_link}>&lt; Back</Link>
+                <Link to='/cv/project' className={styles.project__description_headdedr_link_mobile}>&lt; Back</Link>
                 <div className={styles.project__description_headdedr_linkgrup}>
                     <a className={styles.project__description_headdedr_linkgrup_link} href={props.location.state.repositories} target="_blank" rel="noopener noreferrer">&lt; Репозиторий &gt;</a> 
                     <a className={styles.project__description_headdedr_linkgrup_link} href={props.location.state.deploy} target="_blank" rel="noopener noreferrer">&lt; Demo &gt;</a>  
