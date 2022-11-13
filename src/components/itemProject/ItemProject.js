@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 function ItemProject({
     id,
     title,
-    posterFull,
     poster,
     technology,
     stack,
@@ -31,7 +30,6 @@ function ItemProject({
                         state: { 
                         id,
                         title,
-                        posterFull,
                         poster,
                         technology,
                         stack,
