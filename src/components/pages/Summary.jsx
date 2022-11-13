@@ -6,7 +6,7 @@ function Summary () {
         <div className={styles.wrap_summary}> 
                     <div className={styles.summary}>
                         <div className={styles.summaty_gruplink}>
-                            <a href='http://d.zaix.ru/wkwn.pdf' download className={styles.summaty_gruplink_link}>&lt; Cкачать &gt;</a>
+                            <a href='file/Александр_Вегеле_Junior_Frontend-разработчик.pdf' download className={styles.summaty_gruplink_link}>&lt; Cкачать &gt;</a>
                             <a href='http://d.zaix.ru/wkwn.pdf' target='_blanc' className={styles.summaty_gruplink_link}>&lt; Печать &gt;</a>
                         </div>
                         <div className={styles.summary_content}>
