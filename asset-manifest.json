@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff71c51e.css",
-    "main.js": "/static/js/main.3aae80e0.js",
-    "static/media/VictorMono-Bold.ttf": "/static/media/VictorMono-Bold.11783b6831b548e68467.ttf",
-    "static/media/VictorMono-Light.ttf": "/static/media/VictorMono-Light.d046537f0951d276b32d.ttf",
-    "static/media/gitbg.png": "/static/media/gitbg.52cca71dc069feebd457.png",
-    "index.html": "/index.html",
-    "main.ff71c51e.css.map": "/static/css/main.ff71c51e.css.map",
-    "main.3aae80e0.js.map": "/static/js/main.3aae80e0.js.map"
+    "main.css": "/cv/static/css/main.c9617fc3.css",
+    "main.js": "/cv/static/js/main.3aae80e0.js",
+    "static/media/VictorMono-Bold.ttf": "/cv/static/media/VictorMono-Bold.11783b6831b548e68467.ttf",
+    "static/media/VictorMono-Light.ttf": "/cv/static/media/VictorMono-Light.d046537f0951d276b32d.ttf",
+    "static/media/gitbg.png": "/cv/static/media/gitbg.52cca71dc069feebd457.png",
+    "index.html": "/cv/index.html",
+    "main.c9617fc3.css.map": "/cv/static/css/main.c9617fc3.css.map",
+    "main.3aae80e0.js.map": "/cv/static/js/main.3aae80e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff71c51e.css",
+    "static/css/main.c9617fc3.css",
     "static/js/main.3aae80e0.js"
   ]
 }
