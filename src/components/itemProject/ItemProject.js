@@ -27,7 +27,7 @@ function ItemProject({
                 <h2 className={styles.item__container_content_headding}>{title}</h2>
                 <div className={styles.item__container_content_linkgrup}>
                     <Link to={{
-                        pathname: `/project/${title}`,
+                        pathname: `/MyPortfolio/project/${title}`,
                         state: { 
                         id,
                         title,
