@@ -17,7 +17,7 @@ html, body {
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0;
 }
 
 /*тема*/
@@ -93,7 +93,6 @@ html[data-theme="light"]{
 
  .wrap_content{
   width: 100vw;
-  height: 100vh;
   display: flex;
   background-color: var(--background-color);
   transition: background-color 600ms linear;
@@ -108,7 +107,6 @@ html[data-theme="light"]{
  }
 
  .content{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   margin-left: 50px;

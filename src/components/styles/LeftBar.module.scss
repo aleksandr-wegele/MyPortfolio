@@ -6,7 +6,7 @@
 //левый фрагмент
 .leftBar__wrap{
 width: 25vw;
-max-height: 100vh;
+height: 100vh;
 background-image: url('../../../public/img/gitbg.png');
 background-size: 70px;
 background-position: right;
@@ -21,10 +21,10 @@ overflow-y: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
         //фото
         .leftBar__info_photo{
             .leftBar__info_photo_img{
+                margin-top: 20px;
                 border-radius: 50%;
                 width: 12vw;
                 height: 12vw;
@@ -101,6 +101,7 @@ overflow-y: auto;
     //кнопки
     .leftBar__info_btngroup{
         margin-top: 50px;
+        margin-bottom: 20px;
         display: flex;
         gap: 25px;
         .leftBar__info_btngroup_project{

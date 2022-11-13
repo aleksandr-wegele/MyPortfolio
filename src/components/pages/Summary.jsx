@@ -6,8 +6,8 @@ function Summary () {
         <div className={styles.wrap_summary}> 
                     <div className={styles.summary}>
                         <div className={styles.summaty_gruplink}>
-                            <a href='/file/Александр_Вегеле_Junior_Frontend-разработчик.pdf' download className={styles.summaty_gruplink_link}>&lt; Cкачать &gt;</a>
-                            <a href='/file/Александр_Вегеле_Junior_Frontend-разработчик.pdf' target='_blanc' className={styles.summaty_gruplink_link}>&lt; Печать &gt;</a>
+                            <a href='http://d.zaix.ru/wkwn.pdf' download className={styles.summaty_gruplink_link}>&lt; Cкачать &gt;</a>
+                            <a href='http://d.zaix.ru/wkwn.pdf' target='_blanc' className={styles.summaty_gruplink_link}>&lt; Печать &gt;</a>
                         </div>
                         <div className={styles.summary_content}>
                             <div className={styles.about}>
@@ -55,10 +55,10 @@ function Summary () {
                             <p className={styles.summary_content_description}>2022 - настоящее время Самостоятельное обучение и практика по направлению Frontend.</p>
                             <p className={styles.summary_content_description}>Реализованные проекты:</p>
                             <ul className={styles.summary_content_description_list}>
-                                <li className={styles.summary_content_description_list_item}>Верстка макета. <a href='#' target="_blank" rel="noopener noreferrer">ссылка.</a> <a href='#' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
-                                <li className={styles.summary_content_description_list_item}>Онлайн-магазин. <a href='#' target="_blank" rel="noopener noreferrer">ссылка.</a> <a href='#' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
-                                <li className={styles.summary_content_description_list_item}>Кино-портал. <a href='#' target="_blank" rel="noopener noreferrer">ссылка.</a> <a href='#' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
-                                <li className={styles.summary_content_description_list_item}>Сайт-портфолио. <a href='#' target="_blank" rel="noopener noreferrer">ссылка.</a> <a href='#' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
+                                <li className={styles.summary_content_description_list_item}>Верстка макета. <a href='https://github.com/aleksandr-wegele/skillbox-course-project-Evklid' target="_blank" rel="noopener noreferrer">Репозиторий</a></li>
+                                <li className={styles.summary_content_description_list_item}>Онлайн-магазин. <a href='https://aleksandr-wegele.github.io/react-shop/' target="_blank" rel="noopener noreferrer">Demo</a> <a href='https://github.com/aleksandr-wegele/react-shop' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
+                                <li className={styles.summary_content_description_list_item}>Кино-портал. <a href='https://aleksandr-wegele.github.io/react-app/' target="_blank" rel="noopener noreferrer">Demo</a> <a href='https://github.com/aleksandr-wegele/react-app' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
+                                <li className={styles.summary_content_description_list_item}>Сайт-портфолио. <a href='https://aleksandr-wegele.github.io/MyPortfolio/' target="_blank" rel="noopener noreferrer">Demo</a> <a href='https://github.com/aleksandr-wegele/MyPortfolio' target="_blank" rel="noopener noreferrer">репозиторий</a></li>
                             </ul>
                             <p className={styles.summary_content_description}>2021-2022 – Менеджер по лизингу (ГК Интерлизинг)</p>
                             <p className={styles.summary_content_description}>2016-2021 – Менеджер по продажам легковых автомобилей</p>   
