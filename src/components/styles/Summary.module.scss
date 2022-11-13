@@ -1,0 +1,156 @@
+.wrap_summary{
+    width: 60vw;
+    }
+    .summary{
+        .summaty_gruplink{
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-end;
+            .summaty_gruplink_link{
+                font-family: 'VictorMono';
+                font-size: 25px;
+                font-weight: 500;
+                padding: 10px 20px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--link-text-color);
+                transition: color 600ms linear;
+                &:hover{
+                    transition: 300ms;
+                    color: var(--link-text-hover-color);
+                }
+            }
+        }
+        
+        .summary_content{
+            overflow-y: auto;
+            max-height: 80vh;
+
+            .about{
+                margin-bottom: 50px;
+            }
+            .skills{
+                margin-bottom: 50px;
+            }
+            .education{
+                margin-bottom: 50px;
+            }
+            .work{
+                margin-bottom: 50px;
+            }
+            .summary_content_title{
+                margin-top: 15px;
+                font-size: 25px;
+                color: var(--text-color-content);
+                transition: color 600ms linear;
+            } 
+            .summary_content_skills{
+                .summary_content_skills_item{
+                    font-family: 'VictorMonoLight';
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    color: var(--text-color-content);
+                    transition: color 600ms linear;
+                    .bold{
+                        font-family: 'VictorMonoLight';
+                        font-size: 18px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                }
+            } 
+            .summary_content_description{
+            font-family: 'VictorMonoLight';
+            font-size: 18px;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
+            }
+            .summary_content_description_list{
+                list-style: circle;
+                padding-left: 25px;
+                .summary_content_description_list_item{
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                    font-family: 'VictorMonoLight';
+                    color: var(--text-color-content);
+                    transition: color 600ms linear;
+                    a{
+                        color: var(--link-text-color);
+                        &:hover{
+                            color: var(--link-text-hover-color);
+                        }
+                    }
+                }
+            } 
+        }
+}
+
+@media  (max-width: 550px){
+    .wrap_summary{
+        width: 100vw;
+        }
+        .summary{
+            .summaty_gruplink{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+                .summaty_gruplink_link{
+                    font-size: 21px;
+                    padding: 5px 10px;
+                }
+            }
+            
+            .summary_content{
+                overflow-y: none;
+                max-height: none;
+                padding: 0 10px;
+    
+                .about{
+                    margin-bottom: 30px;
+                }
+                .skills{
+                    margin-bottom: 30px;
+                }
+                .education{
+                    margin-bottom: 30px;
+                }
+                .work{
+                    margin-bottom: 30px;
+                }
+                .summary_content_title{
+                    margin-top: 15px;
+                    font-size: 18px;
+                } 
+                .summary_content_skills{
+                    .summary_content_skills_item{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        .bold{
+                            font-size: 16px;
+                        }
+                    }
+                } 
+                .summary_content_description{
+                font-size: 15px;
+                }
+                .summary_content_description_list{
+                    list-style: circle;
+                    padding-left: 25px;
+                    .summary_content_description_list_item{
+                        font-size: 16px;
+                    }
+                } 
+            }
+    }
+}
+
+    
+
+
+
+

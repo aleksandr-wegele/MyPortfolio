@@ -1,0 +1,89 @@
+.overlay_window{
+    background-color: #00000077;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+
+    .window{
+        background-color: var(--background-color);
+        box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.281);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 200px;
+        width: 45vw;
+        max-height: 45vh;
+        padding: 20px;
+        position: absolute;
+        z-index: 3;
+        border-radius: 15px;
+        .window_head{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .window_head_headding{
+                margin: 0;
+                color: var(--text-color-content);
+            }
+            .window_head_close{
+                position: absolute;
+                top: -20px;
+                right: -15px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                transition: 400ms;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .window_content{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            overflow-y: scroll;
+            padding: 20px;
+            .window_content_item{
+                padding: 15px;
+                border: 1px solid #444;
+                border-radius: 15px;
+                margin-top: 15px;
+                cursor: pointer;
+                transition: 300ms;
+                color: var(--text-color-content);
+                &:hover{
+                    transform: scale(1.03);
+                    box-shadow: 10px 10px 5px var(--shadow-hover-color);
+                }
+                .window_content_item_img{
+                    margin-top: 10px;
+                    width: 200px;
+                    height: 150px;
+                }
+                .window_content_item_gruppLink{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                    .window_content_item_Link{
+                        padding: 5px;
+                        text-decoration: none;
+                        color: var(--link-text-color);
+                        &:hover{
+                            color: var(--link-text-hover-color);
+                        }
+                    }
+                    
+                }
+                
+        
+            }
+        
+        }
+        
+}
+}

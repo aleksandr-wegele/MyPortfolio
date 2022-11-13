@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//врапер
+.nav__wrap{
+    display: flex;
+    margin-top: 20px;
+    //общий
+    .nav{
+        display: flex;
+        align-items: center;
+        width: 60vw;
+        //навигация
+        .nav__list{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            .nav__list_me{
+                display: none;
+            }
+            //ссылка
+            
+            .nav__list_link{
+                font-family: 'VictorMono';
+                font-size: 25px;
+                border: 2px solid #000;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: var(--btn-text-color);
+                transition: color 600ms;
+                background-color: var(--btn-background-color);
+                transition: background-color 600ms;
+                &:hover{
+                    transition: 300ms;
+                    background-color: var(--btn-hover-background);
+                    color: var(--btn-text-hover-color);
+                    box-shadow: 7px 7px 7px var(--shadow-hover-color);
+                }
+                .nav__list_item{}
+            }
+        }
+
+        //смена темы
+        .nav__toggle_theme_btn{
+            cursor: pointer;
+            margin-left: auto;
+            width: 45px;
+            height: 45px;
+            border: none;
+            background: none;
+            background-image: var(--btn-toggle-theme);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            transition: background-image 600ms;
+                    &:hover{
+                        transition: 500ms;
+                        transform: scale(1.2);
+                    }
+        }
+    }
+
+}
+

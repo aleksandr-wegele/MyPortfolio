@@ -1,34 +1,153 @@
-body {
-
+html, body {
+  position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'VictorMono';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+	font-family: 'VictorMono';
+	src: url('../public/fonst/VictorMono-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'VictorMonoLight';
+	src: url('../public/fonst/VictorMono-Light.ttf');
+}
+
+::-webkit-scrollbar {
+  width: 20px;
 }
 
 /*тема*/
 html[data-theme="dark"]{
-  --background-color: #1C1C1C;
+  /*общие*/
+  --background-color: #1e1e1e;
+  --btn-toggle-theme: url('../public/img/soon.png');
+  /*текст*/
+  --text-color-content: #b1e3ff;
+   /*кнопки и ссылки*/
+  --btn-text-color: #ffe77d;
+  --btn-text-hover-color: #404040;
+  --btn-background-color: #1e1e1e;
+  --btn-hover-background: #ffe77d;
+  /*active*/
+  --btn-active-background: #4e4e4e;
+  --btn-active-text: #ffe77d;
+  /*ссылки*/
+  --link-text-color: #46d2a0;
+  --link-text-hover-color: #ffe77d;
+   /*#*/
+  --tag-text-color: #b288eb;
+  --tag-background-color: #404040 ;
+
+   /*окно*/
+   --shadow-hover-color: #a5a5a548;
+
+  
+
+  
  }
 
 html[data-theme="light"]{
-  --background-color: #ffffff;
- }
+  /*общие*/
+  --background-color: #e6e6e6;
+  --btn-toggle-theme: url('../public/img/moon.png');
+  /*текст*/
 
- .App{
-  background-color: var(--background-color);
-  transition: background-color 400ms linear;
+  --text-color-content: #3f3055;
+
+  /*кнопки и ссылки*/
+  --btn-text-color: #404040;
+  --btn-text-hover-color: #ffe77d;
+  --btn-background-color: #e4e4e4;
+  --btn-hover-background: #202020;
+  /*active*/
+  --btn-active-background: #8d8d8d;
+  --btn-active-text: #ffd95d;
+  /*ссылки*/
+  --link-text-color: #266d54;
+  --link-text-hover-color: #ff500b;
+  /*#*/
+  --tag-text-color: #5f2964;
+  --tag-background-color: #a7a6a2;
+
+  /*окно*/
+  --shadow-hover-color: #00000093;
+ 
  }
+.App{
+  .App_desctop_1224{
+    display: block;
+   }
+  
+  .App_mobile_320{
+    display: none;
+  }
+  .App_tablet_780{
+    display: none;
+  }
+}
+ 
 
  .wrap_content{
-  margin: 0 auto;
-  max-width: 1000px;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
+  background-color: var(--background-color);
+  transition: background-color 600ms linear;
+  
  }
+
+ .border_bg{
+    min-width: 70px;
+    background-image: url('../public/img/gitbg.png');
+    background-size: 70px;
+    background-repeat: repeat-y;
+ }
+
+ .content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+ }
+
+ .active{
+  background-color: var(--btn-active-background) !important;
+  color: var(--btn-active-text) !important;
+  transition: color 600ms linear;
+  transition: background-color 600ms linear;
+  &:hover{
+    box-shadow: none !important;
+  }
+ }
+
+ @media  (max-width: 550px) {
+  .App{
+    .App_desctop_1224{
+      display: none;
+     }
+    
+    .App_mobile_320{
+      display: block;
+    }
+    .App_tablet_780{
+      display: none;
+    }
+  }
+  .wrap_content{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+   }
+}
+  

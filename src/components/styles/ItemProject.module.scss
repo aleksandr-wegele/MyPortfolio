@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+//врапер
+.wrap_item{
+    width: 60vw;
+    height: 70vh;
+
+    .item__container_content_header{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //заголовок
+        .item__container_content_headding{
+            font-weight: bold;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
+        }
+        //кнопки
+        .item__container_content_linkgrup{
+            display: flex;
+            .item__container_content_linkgrup_link{
+                font-family: 'VictorMono';
+                font-size: 25px;
+                font-weight: 500;
+                padding: 10px 20px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--link-text-color);
+                transition: color 600ms linear;
+                &:hover{
+                    transition: 300ms;
+                    color: var(--link-text-hover-color);
+                }
+                
+            }
+        }
+    }
+    
+    
+        //основной контент
+        .item__container_content{
+            margin-top: 30px;
+            min-height: 60vh;
+            overflow-y: auto;
+            //описание
+            .item__container_content_description{
+                font-family: 'VictorMonoLight';
+                font-size: 21px;
+                color: var(--text-color-content);
+                transition: color 600ms linear;
+            }
+            //постер + стек + технологии 
+            .item__container_content_grup{
+                width: 60vw;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                .item__container_img{
+                    width: 30vw;
+                    height: 40vh;
+                }
+                //стек элементы
+                .item__container_content_stack{
+                    display: flex;
+                    flex-direction: column;
+                    .item__container_content_stack_headding{
+                        font-size: 21px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                    .item__container_content_stack_grup{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        .item__container_content_stack_item{
+                            border-radius: 5px;
+                            padding: 5px;
+                            color: var(--tag-text-color);
+                            transition: color 600ms linear;
+                            padding-left: 45px;
+                            padding-right: 10px;
+                            padding-bottom: 3px;
+                            padding-top: 3px;
+                            background-color: var(--tag-background-color);
+                            transition: background-color 600ms linear;
+                            &:nth-child(1){
+                                background-image: url('../../../public/img/reacticon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(2){
+                                background-image: url('../../../public/img/jsicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(3){
+                                background-image: url('../../../public/img/htmlicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(4){
+                                background-image: url('../../../public/img/sassicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(5){
+                                background-image: url('../../../public/img/githubicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                        }
+                        
+                    }
+                }
+    
+                //технологии
+                .item__container_content_technology{
+                    display: flex;
+                    flex-direction: column;
+                    .item__container_content_technology_headding{
+                        font-size: 21px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                    .item__container_content_technology_list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style: none;
+                        margin-top: 20px;
+                        .item__container_content_technology_list_item{
+                            border-radius: 5px;
+                            padding: 5px 15px;
+                            color: var(--tag-text-color);
+                            transition: color 600ms linear;
+                            background-color: var(--tag-background-color);
+                            transition: background-color 600ms linear;
+                        }
+                    }
+                }
+            }
+        }
+    
+
+}
+
+@media  (max-width: 550px){
+    //врапер
+    .wrap_item{
+        width: 100vw;
+        height: auto;
+    
+        .item__container_content_header{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            //заголовок
+            .item__container_content_headding{
+                width: 30vw;
+                font-size: 16px;
+            }
+            //кнопки
+            .item__container_content_linkgrup{
+                display: flex;
+                justify-content: flex-end;
+                width: 80vw;
+                .item__container_content_linkgrup_link{
+                    font-size: 16px;
+                    padding: 5px 5px;
+                }
+            }
+        }
+        
+        
+            //основной контент
+            .item__container_content{
+                margin-top: 30px;
+                min-height: 60vh;
+                //описание
+                .item__container_content_description{
+                    width: 90vw;
+                    font-size: 16px;
+                    padding: 0 10px;
+                }
+                //постер + стек + технологии 
+                .item__container_content_grup{
+                    width: 100vw;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    .item__container_img{
+                        width: 90vw;
+                        height: 40vh;
+                    }
+                    //стек элементы
+                    .item__container_content_stack{
+                        margin-top: 20px;
+                        width: 40vw;
+                        display: inline-block;
+                        flex-direction: column;
+                        .item__container_content_stack_headding{
+                            font-size: 16px;
+                        }
+                        .item__container_content_stack_grup{
+                            margin-top: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            .item__container_content_stack_item{
+                                font-size: 12px;
+                                border-radius: 5px;
+                                padding: 5px;
+                                padding-left: 45px;
+                                padding-right: 10px;
+                                padding-bottom: 3px;
+                                padding-top: 3px;
+                            }
+                            
+                        }
+                    }
+        
+                    //технологии
+                    .item__container_content_technology{
+                        margin-top: 20px;
+                        width: 40vw;
+                        display: inline-block;
+                        flex-direction: column;
+                        .item__container_content_technology_headding{
+                            font-size: 16px;
+                        }
+                        .item__container_content_technology_list{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            list-style: none;
+                            margin-top: 20px;
+                            .item__container_content_technology_list_item{
+                                font-size: 12px;
+                                border-radius: 5px;
+                                padding-right: 10px;
+                                padding-bottom: 3px;
+                                padding-top: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+    }
+    }
+    
+
+

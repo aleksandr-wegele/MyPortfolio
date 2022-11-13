@@ -1,0 +1,59 @@
+.wrap{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.leftBar__info_skils{
+    width: 65vw;
+    //заголовок
+    .leftBar__info_skils_title{
+        color: var(--text-color-content);
+        transition: color 600ms linear;
+    }
+    //список
+    .leftBar__info_skils_list{
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--text-color-content);
+        transition: color 600ms linear;
+        //элементы
+        .leftBar__info_skils_list_item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            //иконки
+            .leftBar__info_skils_img{
+                width: 8vw;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+//кнопки
+.leftBar__info_btngroup{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    .leftBar__info_btngroup_contact{
+        cursor: pointer;
+        border: 2px solid #000;
+        text-decoration: none;
+        padding: 0px 10px;
+        font-family: 'VictorMono';
+        font-size: 25px;
+        font-weight: 500;  
+        background-color: var(--btn-background-color);
+        transition: background-color 600ms linear;
+        color: var(--btn-text-color);
+        transition: color 600ms linear;
+        &:hover{
+            transition: 300ms;
+            background-color: var(--btn-hover-background);
+            color: var(--btn-text-hover-color);
+            box-shadow: 7px 7px 7px var(--shadow-hover-color);
+        }
+        }
+}
+}

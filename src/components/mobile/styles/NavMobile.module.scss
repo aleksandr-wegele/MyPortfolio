@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//врапер
+.nav__wrap{
+    display: flex;
+    margin-top: 20px;
+    //общий
+    .nav{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        //навигация
+        .nav__list{
+            display: flex;
+            list-style: none;
+            width: 100vw;
+            //ссылка
+            
+            .nav__list_link{
+                width: 35vw;
+                font-family: 'VictorMono';
+                font-size: 18px;
+                border: 1px solid #000;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: var(--btn-text-color);
+                transition: color 600ms;
+                background-color: var(--btn-background-color);
+                transition: background-color 600ms;
+                &:hover{
+                    transition: 300ms;
+                    background-color: var(--btn-hover-background);
+                    color: var(--btn-text-hover-color);
+                    box-shadow: 7px 7px 7px var(--shadow-hover-color);
+                }
+                .nav__list_item{
+                    text-align: center;
+                }
+                &:nth-last-child(n+2){
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+}
+

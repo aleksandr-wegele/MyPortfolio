@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+//врапер
+.project__wrap{
+    width: 60vw;
+    //ссылки
+    .project__description_headdedr{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+        .project__description_headdedr_link{
+            font-family: 'VictorMono';
+            font-size: 25px;
+            font-weight: 500;
+            padding: 10px 0px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--link-text-color);
+            transition: color 600ms linear;
+                        &:hover{
+                            transition: 300ms;
+                            color: var(--link-text-hover-color);
+                        }
+        }
+        .project__description_headdedr_link_mobile{
+            display: none;
+        }
+        .project__description_headdedr_linkgrup{
+            .project__description_headdedr_linkgrup_link{
+                font-family: 'VictorMono';
+                font-size: 25px;
+                font-weight: 500;
+                padding: 10px 20px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--link-text-color);
+                transition: color 600ms linear;
+                        &:hover{
+                            transition: 300ms;
+                            color: var(--link-text-hover-color);
+                        }
+            }
+        }
+        
+    }
+    .project__description{
+        //заголовок
+        .project__description_title{
+            margin-top: 20px;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
+        }
+        //описание
+        .project__description_content{
+            margin-top: 20px;
+            max-height: 72vh;
+            overflow-y: auto;
+            .project__description_text{
+                font-family: 'VictorMonoLight';
+                font-size: 18px;
+                color: var(--text-color-content);
+                transition: color 600ms linear;
+            }
+            .project__description_content_grup{
+                width: 1100px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-around;
+                .project__description_img{
+                    width: 600px;
+                }
+                //стек
+                .project__description_stack{
+                    display: flex;
+                    flex-direction: column;
+                    .project__description_stack_headding{
+                        font-size: 21px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                    .project__description_stack_grup{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        .project__description_stack_grup_item{
+                            border-radius: 5px;
+                            padding: 5px;
+                            color: var(--tag-text-color);
+                            transition: color 600ms linear;
+                            padding-left: 45px;
+                            padding-right: 5px;
+                            padding-bottom: 3px;
+                            padding-top: 3px;
+                            background-color: var(--tag-background-color);
+                            transition: background-color 600ms linear;
+                            &:nth-child(1){
+                                background-image: url('../../../public/img/reacticon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(2){
+                                background-image: url('../../../public/img/jsicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(3){
+                                background-image: url('../../../public/img/htmlicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(4){
+                                background-image: url('../../../public/img/sassicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                            &:nth-child(5){
+                                background-image: url('../../../public/img/githubicon.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: 5px;
+                            }
+                        }
+                    }
+                }
+                //технологии
+                .project__description_technology{
+                    display: flex;
+                    flex-direction: column;
+                    .project__description_technology_headding{
+                        font-size: 21px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                    .project__description_technology_list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style: none;
+                        margin-top: 20px;
+                        .project__description_technology_list_item{
+                            border-radius: 5px;
+                            padding: 5px 15px;
+                            color: var(--tag-text-color);
+                            transition: color 600ms linear;
+                            background-color: var(--tag-background-color);
+                            transition: background-color 600ms linear;
+                        }
+                    }
+                }
+                
+            }
+            //релиз
+            .project__description_realiz{
+                margin-top: 30px;
+                .project__description_realiz_headding{
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: var(--text-color-content);
+                    transition: color 600ms linear;
+                }
+                .project__description_realiz_list{
+                    margin-top: 20px;
+                    .project__description_realiz_list_item{
+                        font-family: 'VictorMonoLight';
+                        font-size: 18px;
+                        color: var(--text-color-content);
+                        transition: color 600ms linear;
+                    }
+                }
+            
+            }
+            
+        }
+    }
+}
+
+@media  (max-width: 550px){
+    .project__wrap{
+        width: 100vw;
+        //ссылки
+        .project__description_headdedr{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            align-items: center;
+            .project__description_headdedr_link{
+                display: none;
+            }
+            .project__description_headdedr_link_mobile{
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'VictorMono';
+                padding: 10px 10px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--link-text-color);
+                transition: color 600ms linear;
+                        &:hover{
+                            transition: 300ms;
+                            color: var(--link-text-hover-color);
+                        }
+            }
+            .project__description_headdedr_linkgrup{
+                .project__description_headdedr_linkgrup_link{
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 5px 10px;
+                }
+            }
+            
+        }
+        .project__description{
+            margin-top: 40px;
+            //заголовок
+            .project__description_title{
+                font-size: 18px;
+                padding: 0 10px;
+            }
+            //описание
+            .project__description_content{
+                margin-top: 20px;
+                max-height: none;
+                overflow-y: none;
+                .project__description_text{
+                    width: 90vw;
+                    font-size: 16px;
+                    padding: 0 10px;
+                }
+                .project__description_content_grup{
+                    width: 100vw;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .project__description_img{
+                        width: 95vw;
+                    }
+                    //стек
+                    .project__description_stack{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        .project__description_stack_headding{
+                            font-size: 16px;
+                        }
+                        .project__description_stack_grup{
+                            .project__description_stack_grup_item{
+                                font-size: 14px;
+                                padding-left: 35px;
+                            }
+                        }
+                    }
+                    //технологии
+                    .project__description_technology{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        .project__description_technology_headding{
+                            padding-left: 10px;
+                            font-size: 16px;
+                        }
+                        .project__description_technology_list{
+                            .project__description_technology_list_item{
+                                font-size: 14px;
+                                border-radius: 5px;
+                                padding: 5px 15px;
+                            }
+                        }
+                    }
+                    
+                }
+                //релиз
+                .project__description_realiz{
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    .project__description_realiz_headding{
+                        padding-left: 5px;
+                        font-size: 16px;
+                    }
+                    .project__description_realiz_list{
+                        padding-left: 25px;
+                        padding-right: 5px;
+                        margin-top: 20px;
+                        .project__description_realiz_list_item{
+                            font-size: 14px;
+                            
+                        }
+                    }
+                
+                }
+                
+            }
+        }
+    }
+}

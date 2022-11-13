@@ -1,97 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//левый фрагмент
 .leftBar__wrap{
-    min-width: 300px;
-    min-height: 100vh;
-    background-image: url('../../../public/img/bg_leftbar.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: #202020;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+width: 25vw;
+background-image: url('../../../public/img/gitbg.png');
+background-size: 70px;
+background-position: right;
+background-repeat: repeat-y;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-right: 70px;
+//личная информаци    
     .leftBar__info{
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-width: 260px;
+        margin-top: 20px;
+        //фото
         .leftBar__info_photo{
-            margin-top: 130px;
             .leftBar__info_photo_img{
-                width: 100px;
-                height: 100px;
-                border: 2px solid #ffffff;
                 border-radius: 50%;
+                width: 12vw;
+                height: 12vw;
             }
         }
+        //имя
         .leftBar__info_about_my{
-            min-width: 260px;
-            border-bottom: 1px solid #131313;
-        }
+            margin-top: 40px;
         .leftBar__info_name{
-            margin: 19px auto 0px;
-            color: #ffffff;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 21px;
-            text-align: center;
+            font-size: 30px;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
         }
         .leftBar__info_jobTitle{
-            margin: 3px auto;
-            color: #ffffff;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 16px;
+            font-family: 'VictorMonoLight';
+            margin-top: 5px;
             text-align: center;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
         }
+
+        //контакты
         .leftBar__info_linkContacts{
-            margin-top: 17px;
-            margin-bottom: 30px;
+            margin-top: 20px;
             display: flex;
+            align-items: center;
             justify-content: center;
             gap: 20px;
             .leftBar__info_linkContacts_link{
-                width: 25px;
-                height: 25px;
                 .leftBar__info_linkContacts_img{
-                    width: 25px;
-                    height: 25px;
+                    width: 40px;
+                    height: 40px;
+                    transition: 500ms;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
             }
-            
+        }   
+        }
+    }
+    //скилы
+    .leftBar__info_skils{
+        margin-top: 50px;
+        width: 15vw;
+        //заголовок
+        .leftBar__info_skils_title{
+            color: var(--text-color-content);
+            transition: color 600ms linear;
+        }
+        //список
+        .leftBar__info_skils_list{
+            margin-top: 20px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: var(--text-color-content);
+            transition: color 600ms linear;
+            //элементы
+            .leftBar__info_skils_list_item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                //иконки
+                .leftBar__info_skils_img{
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    //кнопки
+    .leftBar__info_btngroup{
+        margin-top: 50px;
+        display: flex;
+        gap: 25px;
+        .leftBar__info_btngroup_project{
+            font-family: 'VictorMono';
+            font-size: 25px;
+            font-weight: 500;
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: var(--btn-background-color);
+            transition: background-color 600ms linear;
+            color: var(--btn-text-color);
+            transition: color 600ms linear;
+            &:hover{
+                transition: 300ms;
+                background-color: var(--btn-hover-background);
+                color: var(--btn-text-hover-color);
+                box-shadow: 7px 7px 7px var(--shadow-hover-color);
+            }
+        }
+        .leftBar__info_btngroup_contact{
+            cursor: pointer;
+            border: 2px solid #000;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-family: 'VictorMono';
+            font-size: 25px;
+            font-weight: 500;  
+            background-color: var(--btn-background-color);
+            transition: background-color 600ms linear;
+            color: var(--btn-text-color);
+            transition: color 600ms linear;
+            &:hover{
+                transition: 300ms;
+                background-color: var(--btn-hover-background);
+                color: var(--btn-text-hover-color);
+                box-shadow: 7px 7px 7px var(--shadow-hover-color);
+            }
+            }
         }
     }
 
-    .leftBar__info_about{
-        margin-top: 30px;
-        border-bottom: 1px solid #131313;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .leftBar__info_about_description{
-            margin: 0;
-            padding-bottom: 30px;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 18px;
-            text-align: center;
-            color: #FFFFFF;
-            max-width: 260px;
-        }
-    }
-    
-    .leftBar__info_btngroup{
-        max-width: 260px;
-        margin-top: 30px;
-        display: flex;
-        gap: 10px;
-        .leftBar__info_btngroup_project{
-            width: 120px;
-            height: 40px;
-            border-radius: 15px;
-        }
-        .leftBar__info_btngroup_contact{
-            width: 120px;
-            height: 40px;
-            border-radius: 15px;
-        }
-    }
-}
