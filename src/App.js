@@ -67,13 +67,13 @@ const onClickProject = () => {
               <div className="content">
               <Nav/>
                 
-                <Route exact path="/cv/">
+                <Route exact path="/MyPortfolio/">
                   <Project/>
                 </Route>
                 
-                <Route exact path="/cv/project/:title" component={DescriptionProject}/>
+                <Route exact path="/MyPortfolio/project/:title" component={DescriptionProject}/>
 
-                <Route exact path="/cv/summary">
+                <Route exact path="/MyPortfolio/summary">
                   <Summary/>
                 </Route>
               </div>
@@ -85,17 +85,17 @@ const onClickProject = () => {
             <div className="wrap_content">
               <AboutMobile/>
               <NavMobile/>
-              <Route exact path="/cv/">
+              <Route exact path="/MyPortfolio/">
                 <MySkills/>
               </Route>
               <div className="content">
-                <Route exact path="/cv/project">
+                <Route exact path="/MyPortfolio/project">
                   <Project/>
                 </Route>
                 
-                <Route exact path="/cv/project/:title" component={DescriptionProject}/>
+                <Route exact path="/MyPortfolio/project/:title" component={DescriptionProject}/>
 
-                <Route exact path="/cv/summary">
+                <Route exact path="/MyPortfolio/summary">
                   <Summary/>
                 </Route>
               </div>

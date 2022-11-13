@@ -10,27 +10,27 @@ function MySkills() {
           <h3 className={styles.leftBar__info_skils_title}>My skills:</h3>
           <ul className={styles.leftBar__info_skils_list}>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/reacticon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/reacticon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - React
               </li>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/jsicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/jsicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - JavaScript
               </li>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/htmlicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/htmlicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - HTML
               </li>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/cssicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/cssicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - CSS
               </li>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/sassicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/sassicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - SASS
               </li>
               <li className={styles.leftBar__info_skils_list_item}>
-                  <img src="/img/githubicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
+                  <img src="img/githubicon.png" alt='icon' className={styles.leftBar__info_skils_img} />
                   - Git
               </li>
           </ul>

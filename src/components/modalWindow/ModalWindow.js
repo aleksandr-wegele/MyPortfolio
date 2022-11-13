@@ -17,7 +17,7 @@ const onClickClose = () => {
             <div className={styles.window}>
                 <div className={styles.window_head}>
                     <h2 className={styles.window_head_headding}>Проекты</h2>
-                    <img src="/img/close.png" alt="close" className={styles.window_head_close} onClick={onClickClose}/>
+                    <img src="img/close.png" alt="close" className={styles.window_head_close} onClick={onClickClose}/>
                 </div>
                 <div className={styles.window_content}>
                     {isLoading ? (<div>...Loading</div>) : (itemsWindow.map((item, index) => {
@@ -27,7 +27,7 @@ const onClickClose = () => {
                                 <img className={styles.window_content_item_img} src={item.poster} alt="project"/>
                                 <div  className={styles.window_content_item_gruppLink}>
                                    <Link to={{
-                                    pathname: `/project/${item.title}`,
+                                    pathname: `/MyPortfolio/project/${item.title}`,
                                     state: { 
                                       id: item.id, 
                                       title: item.title, 
