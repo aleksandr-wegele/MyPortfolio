@@ -6,7 +6,7 @@
 //левый фрагмент
 .leftBar__wrap{
 width: 25vw;
-height: 100vh;
+max-height: 100vh;
 background-image: url('../../../public/img/gitbg.png');
 background-size: 70px;
 background-position: right;
@@ -15,6 +15,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding-right: 70px;
+overflow-y: auto;
 //личная информаци    
     .leftBar__info{
         display: flex;
