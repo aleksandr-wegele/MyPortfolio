@@ -71,9 +71,9 @@ const onClickProject = () => {
                   <Project/>
                 </Route>
                 
-                <Route exact path="/MyPortfolio/project/:title" component={DescriptionProject}/>
+                <Route path="/MyPortfolio/project/:title" component={DescriptionProject}/>
 
-                <Route exact path="/MyPortfolio/summary">
+                <Route path="/MyPortfolio/summary">
                   <Summary/>
                 </Route>
               </div>
@@ -89,13 +89,13 @@ const onClickProject = () => {
                 <MySkills/>
               </Route>
               <div className="content">
-                <Route exact path="/MyPortfolio/project">
+                <Route path="/MyPortfolio/project">
                   <Project/>
                 </Route>
                 
-                <Route exact path="/MyPortfolio/project/:title" component={DescriptionProject}/>
+                <Route path="/MyPortfolio/project/:title" component={DescriptionProject}/>
 
-                <Route exact path="/MyPortfolio/summary">
+                <Route path="/MyPortfolio/summary">
                   <Summary/>
                 </Route>
               </div>
